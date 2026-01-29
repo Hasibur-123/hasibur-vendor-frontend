@@ -1,0 +1,245 @@
+.sd-container {
+    font-family: 'Outfit', sans-serif;
+    color: #0f1111;
+    background-color: #ffffff;
+}
+
+/* Hero */
+.sd-hero {
+    width: 100vw;
+    margin: 0 !important;
+    margin-left: calc(-50vw + 50%) !important;
+    margin-top: -80px !important;
+    /* Pull under navbar */
+    padding-top: 80px !important;
+    /* Offset content */
+    color: white;
+    position: relative;
+    text-align: center;
+    background: linear-gradient(135deg, rgba(26, 35, 126, 0.9) 0%, rgba(13, 22, 66, 0.95) 100%), url('https://images.unsplash.com/photo-1552664730-d307ca884978?w=1920&h=1080&fit=crop&q=80') center/cover no-repeat fixed;
+    padding-bottom: 8rem !important;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.sd-hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.sd-hero-title {
+    font-size: clamp(2.25rem, 8vw, 4rem);
+    font-weight: 900;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.02em;
+}
+
+
+.sd-hero-desc {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 3rem;
+    line-height: 1.6;
+    opacity: 0.9;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.sd-cta-btn {
+    display: inline-block;
+    padding: 1.25rem 3.5rem;
+    background: #FFD700;
+    color: #1A237E;
+    font-weight: 800;
+    font-size: 1.125rem;
+    border-radius: 50px;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transition: all 0.3s ease;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.sd-cta-btn:hover {
+    background: #FFA000;
+    transform: translateY(-3px);
+}
+
+
+/* Fulfillment Options */
+.sd-options-section {
+    padding: 5rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.sd-section-heading {
+    text-align: center;
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    font-weight: 900;
+    margin-bottom: 4rem;
+    color: #1A237E;
+    letter-spacing: -0.02em;
+}
+
+
+.sd-options-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 3rem;
+}
+
+.sd-option-card {
+    border: 1px solid var(--glass-border);
+    border-radius: 1.5rem;
+    padding: 3rem 2.5rem;
+    background: #fff;
+    transition: all 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centered Cards */
+    text-align: center;
+}
+
+.sd-option-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(26, 35, 126, 0.08);
+    border-color: #1A237E;
+}
+
+
+.sd-card-icon {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    display: block;
+}
+
+.sd-card-title {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    color: #1A237E;
+}
+
+
+.sd-card-desc {
+    font-size: 1rem;
+    color: var(--text-muted);
+    line-height: 1.7;
+    margin-bottom: 2rem;
+}
+
+
+.sd-benefits-list {
+    list-style: none;
+    padding: 0;
+}
+
+.sd-benefit-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Center Benefit Items */
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: var(--text);
+}
+
+
+.sd-check {
+    color: #22c55e;
+    font-weight: bold;
+}
+
+/* Value Props */
+.sd-value-section {
+    background: #f7fafa;
+    padding: 5rem 2rem;
+}
+
+.sd-value-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    text-align: center;
+}
+
+.sd-value-item img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 1rem;
+    object-fit: contain;
+    background: #e8f4f8;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.sd-value-item svg {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 1rem;
+}
+
+.sd-value-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 1rem;
+}
+
+.sd-value-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.sd-value-desc {
+    color: #555;
+    font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+    .sd-hero {
+        width: 100%;
+        margin-left: 0 !important;
+        margin-top: -64px !important;
+        padding-top: 64px !important;
+        padding-bottom: 4rem !important;
+        min-height: 400px;
+    }
+
+    .sd-hero-title {
+        font-size: 2rem;
+    }
+
+    .sd-hero-desc {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .sd-options-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .sd-option-card {
+        padding: 2.5rem 1.5rem;
+    }
+
+    .sd-value-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+}

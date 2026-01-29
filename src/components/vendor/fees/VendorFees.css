@@ -1,0 +1,230 @@
+.fees-container {
+    font-family: 'Outfit', sans-serif;
+    color: #0f1111;
+    background-color: #ffffff;
+}
+
+/* Hero */
+.fees-hero {
+    width: 100vw;
+    margin: 0 !important;
+    margin-left: calc(-50vw + 50%) !important;
+    margin-top: -80px !important;
+    /* Pull under navbar */
+    padding-top: 80px !important;
+    /* Offset content */
+    background: linear-gradient(135deg, #1A237E 0%, #0D1642 100%);
+    padding-bottom: 8rem !important;
+    text-align: center;
+    color: white;
+}
+
+
+
+.fees-hero-title {
+    font-size: clamp(2.25rem, 6vw, 3.25rem);
+    font-weight: 900;
+    margin-bottom: 1.5rem;
+    color: white;
+    letter-spacing: -0.02em;
+}
+
+
+.fees-hero-subtitle {
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 800px;
+    margin: 0 auto 2.5rem;
+    line-height: 1.6;
+    font-weight: 500;
+}
+
+
+/* Fee Breakdown */
+.fees-section {
+    padding: 5rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.fee-types-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+}
+
+.fee-card {
+    border: 1px solid var(--glass-border);
+    border-radius: 1.5rem;
+    padding: 3rem 2rem;
+    background: white;
+    box-shadow: 0 20px 40px rgba(26, 35, 126, 0.08);
+    transition: all 0.4s ease;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fee-card:hover {
+    transform: translateY(-8px);
+    border-color: #1A237E;
+}
+
+
+.fee-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.fee-icon-circle {
+    width: 60px;
+    height: 60px;
+    background: rgba(26, 35, 126, 0.05);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: #1A237E;
+}
+
+
+.fee-title {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #1A237E;
+}
+
+
+.fee-desc {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.fee-example {
+    background: rgba(26, 35, 126, 0.03);
+    padding: 1.25rem;
+    border-left: 4px solid #FFD700;
+    font-size: 0.95rem;
+    color: var(--text);
+    font-weight: 700;
+}
+
+
+/* Table Section */
+.fee-table-section {
+    padding: 2rem;
+    max-width: 1000px;
+    margin: 0 auto 5rem;
+}
+
+.fee-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+}
+
+.fee-table th,
+.fee-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.fee-table th {
+    background: rgba(26, 35, 126, 0.05);
+    font-weight: 800;
+    color: #1A237E;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    letter-spacing: 0.05em;
+}
+
+
+.fee-table tr:hover {
+    background: #fafdff;
+}
+
+/* Example Calculation */
+.calc-example-section {
+    background: #232f3e;
+    color: white;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.calc-box {
+    background: white;
+    color: #111;
+    max-width: 600px;
+    margin: 3rem auto 0;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.calc-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8rem 0;
+    border-bottom: 1px dashed #ddd;
+}
+
+.calc-row.total {
+    border-bottom: none;
+    border-top: 2px solid #1A237E;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: #2e7d32;
+}
+
+
+.calc-label {
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .fees-hero {
+        width: 100%;
+        margin-left: 0 !important;
+        margin-top: -64px !important;
+        padding-top: 64px !important;
+        padding-bottom: 4rem !important;
+        min-height: 350px;
+    }
+
+    .fees-hero-title {
+        font-size: 1.75rem;
+    }
+
+    .fees-hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .fee-types-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .fee-card {
+        padding: 2.5rem 1.5rem;
+    }
+
+    .fee-table {
+        font-size: 0.85rem;
+    }
+
+    .fee-table th,
+    .fee-table td {
+        padding: 0.75rem;
+    }
+
+    .calc-box {
+        padding: 1.5rem;
+    }
+}

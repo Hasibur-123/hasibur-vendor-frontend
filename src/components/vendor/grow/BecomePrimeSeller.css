@@ -1,0 +1,241 @@
+.prime-container {
+    font-family: 'Outfit', sans-serif;
+    color: #0f1111;
+    background-color: #ffffff;
+}
+
+/* Hero */
+.prime-hero {
+    width: 100vw;
+    margin: 0 !important;
+    margin-left: calc(-50vw + 50%) !important;
+    margin-top: -80px !important;
+    /* Pull under navbar */
+    padding-top: 80px !important;
+    /* Offset content */
+    background: linear-gradient(135deg, #1A237E 0%, #0D1642 100%);
+    padding-bottom: 8rem !important;
+    color: white;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+.prime-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.prime-logo-large {
+    font-size: clamp(2.5rem, 8vw, 4.5rem);
+    font-weight: 900;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+    display: inline-block;
+    letter-spacing: -0.02em;
+}
+
+
+.prime-check {
+    color: #FFD700;
+}
+
+
+.prime-hero-subtitle {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 3rem;
+    line-height: 1.6;
+    opacity: 0.9;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.prime-cta-btn {
+    display: inline-block;
+    padding: 1.25rem 3.5rem;
+    background: #FFD700;
+    color: #1A237E;
+    font-weight: 800;
+    font-size: 1.125rem;
+    border-radius: 50px;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transition: all 0.3s ease;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.prime-cta-btn:hover {
+    background: #FFA000;
+    transform: translateY(-3px);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Benefits Grid */
+.prime-benefits-section {
+    padding: 5rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.prime-section-title {
+    text-align: center;
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    color: #1A237E;
+    font-weight: 900;
+    margin-bottom: 4rem;
+    letter-spacing: -0.02em;
+}
+
+
+.prime-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+}
+
+.prime-card {
+    text-align: center;
+    padding: 3rem 2rem;
+    border: 1px solid var(--glass-border);
+    border-radius: 1.5rem;
+    background: white;
+    transition: all 0.4s ease;
+}
+
+.prime-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(26, 35, 126, 0.08);
+    border-color: #1A237E;
+}
+
+
+.prime-icon {
+    font-size: 3rem;
+    color: #1A237E;
+    margin-bottom: 1.5rem;
+    display: block;
+}
+
+
+.prime-card-title {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    color: #1A237E;
+}
+
+
+.prime-card-desc {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Badge Preview */
+.badge-preview-section {
+    background: #f7fafa;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.badge-demo-box {
+    background: white;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    text-align: left;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.demo-img {
+    width: 120px;
+    height: 120px;
+    background: #eee;
+    border-radius: 4px;
+}
+
+.demo-content h4 {
+    margin: 0 0 0.5rem 0;
+    color: #0f1111;
+    font-size: 1.1rem;
+    line-height: 1.3;
+}
+
+.prime-badge-icon {
+    color: #1A237E;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 0.9rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 2px;
+}
+
+
+.prime-check-small {
+    color: #FF9900;
+}
+
+.demo-price {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #B12704;
+    margin-top: 0.5rem;
+}
+
+.badge-text {
+    margin-top: 2rem;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .prime-hero {
+        width: 100%;
+        margin-left: 0 !important;
+        margin-top: -64px !important;
+        padding-top: 64px !important;
+        padding-bottom: 4rem !important;
+        min-height: 400px;
+    }
+
+    .prime-logo-large {
+        font-size: 2.5rem;
+    }
+
+    .prime-hero-subtitle {
+        font-size: 1.1rem;
+        margin-bottom: 2rem;
+    }
+
+    .prime-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .prime-card {
+        padding: 2.5rem 1.5rem;
+    }
+
+    .badge-demo-box {
+        flex-direction: column;
+        padding: 1.5rem;
+    }
+
+    .demo-img {
+        width: 100%;
+        height: 200px;
+    }
+}

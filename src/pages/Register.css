@@ -1,0 +1,272 @@
+/* Register Page Styles */
+.register-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    position: relative;
+    overflow: hidden;
+    background: var(--background);
+    color: var(--text);
+}
+
+/* Background Elements */
+.register-bg-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: 0.2;
+    pointer-events: none;
+}
+
+.bg-blob {
+    position: absolute;
+    width: 24rem;
+    height: 24rem;
+    border-radius: 50%;
+    filter: blur(120px);
+}
+
+.blob-secondary {
+    top: 25%;
+    right: 25%;
+    background: var(--secondary);
+}
+
+.blob-accent {
+    bottom: 25%;
+    left: 25%;
+    background: var(--accent);
+    /* Ensure --accent is defined in index.css, mostly pink-500 equivalent */
+}
+
+/* Card Styles */
+.register-card {
+    width: 100%;
+    max-width: 32rem;
+    /* max-w-lg */
+    position: relative;
+    z-index: 10;
+    padding: 2.5rem;
+    background: var(--glass);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 2rem;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+.register-header {
+    margin-bottom: 2.5rem;
+}
+
+.register-title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--text);
+}
+
+.register-subtitle {
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text-muted);
+}
+
+/* Error Banner */
+.error-banner {
+    background: rgba(239, 68, 68, 0.1);
+    border: 1px solid rgba(239, 68, 68, 0.3);
+    color: #f87171;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+/* Form Styles */
+.register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+}
+
+@media (min-width: 640px) {
+    .form-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: left;
+}
+
+.input-label {
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text-muted);
+    margin-left: 0.25rem;
+}
+
+.input-field {
+    width: 100%;
+}
+
+/* Role Selector */
+.role-selector {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+@media (max-width: 400px) {
+    .role-selector {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+}
+
+.hidden-radio {
+    display: none;
+}
+
+.role-option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem;
+    border-radius: 0.75rem;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.05);
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 0.875rem;
+    opacity: 0.8;
+    color: var(--text);
+}
+
+.role-option.active {
+    border-color: var(--primary);
+    background: rgba(26, 35, 126, 0.1);
+    font-weight: 700;
+    opacity: 1;
+}
+
+
+.role-option:hover {
+    border-color: var(--primary);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Submit Button */
+.submit-btn {
+    width: 100%;
+    padding: 1rem;
+    font-size: 0.875rem;
+    font-weight: 700;
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    box-shadow: 0 15px 25px rgba(26, 35, 126, 0.15);
+
+    margin-top: 2rem;
+    transition: transform 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+}
+
+.btn-arrow {
+    margin-left: 0.5rem;
+    float: right;
+}
+
+
+.submit-btn:hover .btn-arrow {
+    transform: translateX(0.25rem);
+}
+
+/* Footer */
+.register-footer {
+    margin-top: 2.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-text {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+}
+
+.login-link {
+    color: var(--primary);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.login-link:hover {
+    text-decoration: underline;
+}
+
+@media (max-height: 700px) {
+    .footer-tagline {
+        position: relative;
+        bottom: 0;
+        margin-top: 2rem;
+    }
+}
+
+.footer-tagline {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    opacity: 0.4;
+}
+
+/* Animations inherited or defined locally if specific */
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(-5%);
+        animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+
+    50% {
+        transform: translateY(0);
+        animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
+}
+
+.animate-bounce {
+    animation: bounce 1s infinite;
+}

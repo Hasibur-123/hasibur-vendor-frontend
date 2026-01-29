@@ -1,0 +1,238 @@
+.growth-container {
+    font-family: 'Outfit', sans-serif;
+    color: #0f1111;
+    background-color: #ffffff;
+}
+
+/* Hero */
+.growth-hero {
+    width: 100vw;
+    margin: 0 !important;
+    margin-left: calc(-50vw + 50%) !important;
+    margin-top: -80px !important;
+    /* Pull under navbar */
+    padding-top: 80px !important;
+    /* Offset content */
+    background: linear-gradient(135deg, #1A237E 0%, #0D1642 100%);
+    padding-bottom: 8rem !important;
+    color: white;
+    text-align: center;
+}
+
+
+
+.growth-hero-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.growth-hero-title {
+    font-size: clamp(2.25rem, 8vw, 4rem);
+    font-weight: 900;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.02em;
+}
+
+
+.growth-hero-subtitle {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 2.5rem;
+    line-height: 1.6;
+}
+
+
+/* Tools Grid */
+.growth-tools-section {
+    padding: 5rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.growth-section-title {
+    text-align: center;
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    font-weight: 900;
+    color: #1A237E;
+    margin-bottom: 4rem;
+    letter-spacing: -0.02em;
+}
+
+
+.growth-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+.growth-card {
+    border: 1px solid var(--glass-border);
+    border-radius: 1.5rem;
+    padding: 3rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centered Cards */
+    text-align: center;
+    transition: all 0.4s ease;
+    background: white;
+}
+
+.growth-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(26, 35, 126, 0.08);
+    border-color: #1A237E;
+}
+
+
+.growth-icon {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    color: #1A237E;
+}
+
+
+.growth-card-title {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    color: #1A237E;
+}
+
+
+.growth-card-desc {
+    font-size: 1rem;
+    color: var(--text-muted);
+    line-height: 1.7;
+    margin-bottom: 2rem;
+    flex: 1;
+}
+
+
+.growth-link {
+    color: #1A237E;
+    text-decoration: none;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+}
+
+.growth-link:hover {
+    color: #3949AB;
+    gap: 0.75rem;
+    transition: all 0.3s ease;
+}
+
+
+/* Marketing Spotlight */
+.marketing-spotlight {
+    background: #f7fafa;
+    padding: 5rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.spotlight-container {
+    max-width: 1100px;
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+}
+
+.spotlight-img {
+    flex: 1;
+}
+
+.spotlight-img img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.spotlight-content {
+    flex: 1;
+}
+
+.spotlight-title {
+    font-size: clamp(1.5rem, 3vw, 2.25rem);
+    font-weight: 900;
+    margin-bottom: 1.5rem;
+    color: #1A237E;
+    letter-spacing: -0.01em;
+}
+
+
+.spotlight-desc {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.primary-btn {
+    display: inline-block;
+    background: #1A237E;
+    color: white;
+    font-weight: 800;
+    padding: 1.25rem 3rem;
+    border-radius: 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 25px rgba(26, 35, 126, 0.2);
+}
+
+.primary-btn:hover {
+    background: #0D1642;
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(26, 35, 126, 0.3);
+}
+
+
+@media (max-width: 768px) {
+    .growth-hero {
+        width: 100%;
+        margin-left: 0 !important;
+        margin-top: -64px !important;
+        padding-top: 64px !important;
+        padding-bottom: 4rem !important;
+        min-height: 350px;
+    }
+
+    .growth-hero-title {
+        font-size: 2rem;
+    }
+
+    .growth-hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .growth-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .growth-card {
+        padding: 2.5rem 1.5rem;
+    }
+
+    .marketing-spotlight {
+        padding: 3rem 1rem;
+    }
+
+    .spotlight-container {
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .spotlight-title {
+        font-size: 1.5rem;
+    }
+}

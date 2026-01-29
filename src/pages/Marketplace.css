@@ -1,0 +1,427 @@
+/* Marketplace Professional Styles - Absolute Stability v7 */
+
+html {
+    overflow-y: scroll !important;
+}
+
+.marketplace-container {
+    min-height: 100vh;
+    background: #f8f9fa;
+    color: #1a1a1a;
+    font-family: 'Outfit', sans-serif;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Sales Optimized Header */
+.marketplace-header {
+    padding: 6rem 0 3rem 0;
+    position: relative;
+    background: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.header-content.centered {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.4rem 1rem;
+    border-radius: 50px;
+    background: rgba(26, 35, 126, 0.05);
+    border: 1px solid rgba(26, 35, 126, 0.1);
+}
+
+.status-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #10b981;
+}
+
+.status-text {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #1A237E;
+}
+
+.header-title {
+    font-size: 3rem;
+    font-weight: 900;
+    color: #1A237E;
+    margin: 0.5rem 0;
+}
+
+.gradient-text {
+    background: linear-gradient(135deg, #1A237E, #3F51B5);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.header-description {
+    color: #666;
+    font-size: 1.1rem;
+}
+
+/* Content Layout */
+.marketplace-content-wrapper {
+    display: flex;
+    gap: 3rem;
+    padding: 3rem 2rem;
+    align-items: flex-start;
+}
+
+/* Sidebar - Robust Scrolling Strategy */
+.mp-sidebar {
+    width: 300px;
+    flex-shrink: 0;
+    position: sticky;
+    top: 40px;
+    height: calc(100vh - 80px);
+    background: white;
+    border-radius: 1.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
+    overflow: hidden;
+    /* Aside itself clips, inner scrolls */
+    display: flex;
+    flex-direction: column;
+}
+
+.mp-sidebar-content-inner {
+    flex: 1;
+    overflow-y: auto;
+    padding: 2rem;
+    /* Custom Scrollbar for Sidebar */
+    scrollbar-width: thin;
+    scrollbar-color: #1A237E #f5f5f5;
+}
+
+.mp-sidebar-content-inner::-webkit-scrollbar {
+    width: 6px;
+}
+
+.mp-sidebar-content-inner::-webkit-scrollbar-track {
+    background: #f5f5f5;
+}
+
+.mp-sidebar-content-inner::-webkit-scrollbar-thumb {
+    background: #1A237E;
+    border-radius: 10px;
+}
+
+.sidebar-group {
+    margin-bottom: 2.5rem;
+}
+
+.sidebar-heading {
+    font-size: 0.8rem;
+    font-weight: 800;
+    margin-bottom: 1.25rem;
+    color: #1A237E;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.sidebar-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.sidebar-link {
+    background: transparent;
+    border: none;
+    color: #666;
+    text-align: left;
+    padding: 0.6rem 0.8rem;
+    font-size: 0.95rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+.sidebar-link:hover {
+    background: rgba(26, 35, 126, 0.05);
+    color: #1A237E;
+}
+
+.sidebar-link.active {
+    background: #1A237E;
+    color: white;
+    font-weight: 700;
+}
+
+.sort-dropdown-sidebar {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #eee;
+    background: #fff;
+    font-family: inherit;
+    font-size: 0.95rem;
+    color: #1A237E;
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%231A237E' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 16px;
+}
+
+/* Results Main Area */
+.marketplace-main {
+    flex: 1;
+    min-width: 0;
+}
+
+.mp-results-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2.5rem;
+    gap: 1rem;
+}
+
+.results-count {
+    color: #666;
+    font-size: 1rem;
+}
+
+.sort-dropdown {
+    padding: 0.6rem 1rem;
+    border-radius: 10px;
+    border: 1px solid #eee;
+    background: white;
+    font-weight: 600;
+    color: #1A237E;
+}
+
+/* Locked Grid Strategy - NO SHAKING */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    gap: 2.5rem;
+    justify-content: flex-start;
+}
+
+.marketplace-product-card {
+    width: 300px;
+    height: 540px;
+    background: white;
+    border-radius: 1.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+}
+
+.marketplace-product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+.mp-image-container {
+    width: 300px;
+    height: 300px;
+    background: #f5f5f5;
+    position: relative;
+    overflow: hidden;
+}
+
+.mp-product-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.mp-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f0f0f0;
+    color: #ccc;
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+.mp-details {
+    padding: 1.5rem;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+}
+
+.mp-header {
+    height: 100px;
+}
+
+.mp-title {
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: #1A237E;
+    margin-bottom: 0.5rem;
+    line-height: 1.3;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    height: 2.6em;
+}
+
+.mp-vendor {
+    font-size: 0.85rem;
+    color: #888;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.mp-pricing-block {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.mp-price {
+    font-size: 1.6rem;
+    font-weight: 900;
+    color: #1A237E;
+}
+
+.mp-delivery {
+    font-size: 0.75rem;
+    color: #10b981;
+    font-weight: 700;
+}
+
+.view-details-btn {
+    margin-top: auto;
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 12px;
+    border: 1px solid rgba(26, 35, 126, 0.1);
+    background: rgba(26, 35, 126, 0.02);
+    font-weight: 700;
+    color: #1A237E;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.view-details-btn:hover {
+    background: #1A237E;
+    color: white;
+}
+
+/* Loading States */
+.loading-overlay-simple {
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.4);
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    backdrop-filter: blur(1px);
+    border-radius: 1.5rem;
+}
+
+.loading-spinner {
+    width: 40px;
+    height: 40px;
+    border: 3px solid rgba(26, 35, 126, 0.1);
+    border-top-color: #1A237E;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Skeleton State */
+.skeleton-card {
+    pointer-events: none;
+    background: #fff;
+}
+
+.skeleton-box {
+    background: #f0f0f0;
+    position: relative;
+    overflow: hidden;
+}
+
+.skeleton-box::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.skeleton-line {
+    background: #f5f5f5;
+    border-radius: 4px;
+}
+
+/* Responsive Fixes */
+@media (max-width: 1024px) {
+    .marketplace-content-wrapper {
+        flex-direction: column;
+    }
+
+    .mp-sidebar {
+        display: none;
+    }
+}
+
+.mobile-filter-trigger {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .mobile-filter-trigger {
+        display: block;
+        padding: 0.8rem 1.5rem;
+        border-radius: 50px;
+        background: #1A237E;
+        color: white;
+        border: none;
+        font-weight: 700;
+    }
+}

@@ -1,0 +1,141 @@
+.programs-container {
+    font-family: 'Outfit', sans-serif;
+    color: #0f1111;
+    background-color: #ffffff;
+}
+
+.programs-hero {
+    width: 100vw;
+    margin: 0 !important;
+    margin-left: calc(-50vw + 50%) !important;
+    margin-top: -80px !important;
+    /* Pull under navbar */
+    padding-top: 80px !important;
+    /* Offset content */
+    background: linear-gradient(135deg, #1A237E 0%, #0D1642 100%);
+    padding-bottom: 8rem !important;
+    text-align: center;
+    color: white;
+}
+
+
+
+.programs-hero h1 {
+    font-size: clamp(2.25rem, 8vw, 4rem);
+    font-weight: 900;
+    margin-bottom: 1.5rem;
+    color: white;
+    letter-spacing: -0.02em;
+}
+
+
+.program-card-large {
+    display: flex;
+    max-width: 1200px;
+    margin: 6rem auto;
+    background: white;
+    border: 1px solid var(--glass-border);
+    border-radius: 1.5rem;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(26, 35, 126, 0.1);
+}
+
+
+.program-img {
+    flex: 1;
+    min-height: 350px;
+    background-size: cover;
+    background-position: center;
+}
+
+.program-content {
+    flex: 1;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.program-badge {
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    color: #1A237E;
+    background: rgba(26, 35, 126, 0.05);
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    align-self: flex-start;
+    margin-bottom: 1.5rem;
+}
+
+
+.program-title {
+    font-size: clamp(1.5rem, 3vw, 2.25rem);
+    font-weight: 900;
+    margin-bottom: 1.5rem;
+    color: #1A237E;
+    letter-spacing: -0.01em;
+}
+
+
+.program-desc {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    line-height: 1.7;
+    margin-bottom: 2.5rem;
+}
+
+
+.program-link {
+    color: #1A237E;
+    font-weight: 800;
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.program-link:hover {
+    color: #3949AB;
+    gap: 0.75rem;
+    transition: all 0.3s ease;
+}
+
+
+@media (max-width: 768px) {
+    .programs-hero {
+        width: 100%;
+        margin-left: 0 !important;
+        margin-top: -64px !important;
+        padding-top: 64px !important;
+        padding-bottom: 4rem !important;
+        min-height: 300px;
+    }
+
+    .programs-hero h1 {
+        font-size: 2rem;
+    }
+
+    .program-card-large {
+        flex-direction: column;
+        margin: 3rem 1rem;
+    }
+
+    .program-img {
+        min-height: 250px;
+    }
+
+    .program-content {
+        padding: 2rem 1.5rem;
+        text-align: center;
+        align-items: center;
+    }
+
+    .program-badge {
+        align-self: center;
+    }
+}

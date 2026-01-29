@@ -1,0 +1,335 @@
+.v-help-container {
+    font-family: 'Outfit', sans-serif;
+    color: #0f1111;
+    background-color: #f2f4f8;
+    min-height: 100vh;
+}
+
+/* ===================== */
+/* HERO / SEARCH SECTION */
+/* ===================== */
+
+.v-help-hero {
+    width: 100vw;
+    margin: 0 !important;
+    margin-left: calc(-50vw + 50%) !important;
+    margin-top: -80px !important;
+    /* Pull under navbar */
+    padding-top: 80px !important;
+    /* Offset content */
+    background: linear-gradient(135deg, rgba(26, 35, 126, 0.9) 0%, rgba(13, 22, 66, 0.95) 100%), url('/vendor-help-hero.png');
+
+    /* <-- put your screenshot in public folder */
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 6rem !important;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+
+
+.v-help-hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.v-help-title {
+    font-size: clamp(2.25rem, 8vw, 4.5rem);
+    font-weight: 900;
+    margin-bottom: 2rem;
+    letter-spacing: -0.02em;
+}
+
+
+.v-help-search-box {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.v-help-input {
+    width: 100%;
+    padding: 1rem 1rem 1rem 3rem;
+    border-radius: 6px;
+    border: none;
+    font-size: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+
+.v-help-search-icon {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #555;
+    font-size: 1.2rem;
+}
+
+/* ===================== */
+/* TOPICS GRID (FIXED)   */
+/* ===================== */
+
+.v-help-topics-section {
+    max-width: 1200px;
+    margin: 2rem auto 3rem;
+    padding: 0 2rem;
+    position: relative;
+    z-index: 2;
+}
+
+.v-topics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.v-topic-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.v-topic-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(26, 35, 126, 0.08);
+    border-bottom: 4px solid #FFD700;
+    /* Gold Highlight */
+}
+
+
+.v-topic-icon {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(26, 35, 126, 0.05);
+    border-radius: 50%;
+    flex-shrink: 0;
+    box-shadow: 0 4px 12px rgba(26, 35, 126, 0.1);
+}
+
+
+.v-topic-icon svg {
+    width: 60px;
+    height: 60px;
+    display: block;
+    flex-shrink: 0;
+}
+
+.v-topic-title {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 0.75rem;
+    color: #1A237E;
+}
+
+
+.v-topic-desc {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* ===================== */
+/* FAQ SECTION           */
+/* ===================== */
+
+.v-faq-section {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 3rem 2rem 5rem;
+}
+
+.v-faq-heading {
+    text-align: center;
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    font-weight: 900;
+    margin-bottom: 3rem;
+    color: #1A237E;
+    letter-spacing: -0.02em;
+}
+
+
+.v-faq-list {
+    background: white;
+    border-radius: 8px;
+    border: 1px solid #e7e7e7;
+}
+
+.v-faq-item {
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.v-faq-item:last-child {
+    border-bottom: none;
+}
+
+.v-faq-trigger {
+    width: 100%;
+    text-align: left;
+    padding: 1.5rem;
+    background: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.v-faq-trigger:hover {
+    background: rgba(26, 35, 126, 0.03);
+    color: #1A237E;
+}
+
+
+.v-faq-content {
+    padding: 0 1.5rem 1.5rem;
+    color: #555;
+    line-height: 1.6;
+    display: none;
+}
+
+.v-faq-content.open {
+    display: block;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* ===================== */
+/* CONTACT FOOTER        */
+/* ===================== */
+
+.v-contact-footer {
+    text-align: center;
+    padding: 6rem 2rem;
+    background: linear-gradient(135deg, #1A237E 0%, #0D1642 100%);
+    color: white;
+}
+
+
+.v-contact-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.v-contact-btn {
+    display: inline-block;
+    background: #FFD700;
+    color: #1A237E;
+    padding: 1.25rem 3.5rem;
+    font-weight: 800;
+    border-radius: 50px;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transition: all 0.3s ease;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.v-contact-btn:hover {
+    background: #FFA000;
+    transform: translateY(-3px);
+}
+
+
+/* ===================== */
+/* RESPONSIVE            */
+/* ===================== */
+
+@media (max-width: 1024px) {
+    .v-help-hero {
+        padding: 4rem 1.5rem;
+    }
+
+    .v-help-title {
+        font-size: 2rem;
+    }
+
+    .v-topics-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .v-help-container {
+        background-color: #ffffff;
+    }
+
+    .v-help-hero {
+        width: 100%;
+        margin-left: 0 !important;
+        margin-top: -64px !important;
+        padding-top: 64px !important;
+        padding-bottom: 4rem !important;
+        min-height: 350px;
+    }
+
+    .v-help-title {
+        font-size: 1.75rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .v-help-topics-section {
+        margin: 1.5rem auto 2rem;
+        padding: 0 1rem;
+    }
+
+    .v-topics-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .v-help-hero {
+        padding: 2rem 0.8rem;
+        min-height: auto;
+    }
+
+    .v-help-title {
+        font-size: 1.5rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .v-topics-grid {
+        grid-template-columns: 1fr;
+        gap: 0.8rem;
+    }
+
+    .v-faq-trigger {
+        padding: 1rem 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    .v-contact-title {
+        font-size: 1.3rem;
+    }
+}

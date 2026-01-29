@@ -1,0 +1,343 @@
+/* ===== HERO SECTION ===== */
+
+.req-hero-section {
+    width: 100vw;
+    height: 70vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin: 0 !important;
+    padding: 0 !important;
+    margin-left: calc(-50vw + 50%) !important;
+    margin-top: -80px !important;
+    /* Adjusted for 80px navbar */
+    padding-top: 80px !important;
+}
+
+
+.req-hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.req-hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.req-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.85));
+    z-index: 1;
+}
+
+.req-hero-content {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    color: white;
+    max-width: 800px;
+    padding: 0 2rem;
+}
+
+.req-hero-title {
+    font-size: clamp(2.25rem, 8vw, 4rem);
+    font-weight: 900;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    margin-bottom: 1.5rem;
+}
+
+
+.gradient-text {
+    background: linear-gradient(135deg, #FFD700 0%, #FFA000 100%);
+    /* Gold/Amber Gradient */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+
+.req-hero-subtitle {
+    font-size: 1.25rem;
+    font-weight: 500;
+    opacity: 0.9;
+    margin-bottom: 2.5rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.req-hero-btn {
+    display: inline-block;
+    padding: 1.25rem 3rem;
+    background: #1A237E;
+    color: white;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 25px rgba(26, 35, 126, 0.2);
+}
+
+.req-hero-btn:hover {
+    background: #0D1642;
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(26, 35, 126, 0.3);
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .req-hero-section {
+        width: 100%;
+        margin-left: 0 !important;
+        margin-top: -64px !important;
+        /* Mobile navbar height */
+        padding-top: 64px !important;
+        height: auto;
+        min-height: 400px;
+    }
+
+    .req-hero-title {
+        font-size: 2rem;
+    }
+
+    .req-hero-subtitle {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .req-hero-btn {
+        padding: 0.8rem 2rem;
+        font-size: 0.95rem;
+    }
+}
+
+
+.requirements-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    font-family: 'Outfit', sans-serif;
+    color: #0f1111;
+}
+
+.requirements-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.requirements-title {
+    font-size: clamp(2rem, 6vw, 3.25rem);
+    font-weight: 900;
+    margin-bottom: 1.5rem;
+    color: #1A237E;
+    letter-spacing: -0.02em;
+}
+
+.requirements-subtitle {
+    font-size: 1.125rem;
+    color: var(--text-muted);
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+
+/* Card Grid */
+.req-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.req-card {
+    background: #ffffff;
+    border: 1px solid var(--glass-border);
+    border-radius: 1.5rem;
+    padding: 3rem 2.5rem;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centered Cards */
+    text-align: center;
+}
+
+.req-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(26, 35, 126, 0.08);
+    border-color: #1A237E;
+}
+
+
+.req-icon-wrapper {
+    width: 60px;
+    height: 60px;
+    background: #f0f8ff;
+    /* Light blue tint */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.req-icon {
+    font-size: 2rem;
+    color: #1A237E;
+}
+
+
+.req-card-title {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    color: #1A237E;
+}
+
+
+.req-card-text {
+    font-size: 1rem;
+    color: var(--text-muted);
+    line-height: 1.7;
+    margin-bottom: 2rem;
+}
+
+
+/* Checklist items/Micro details */
+.req-details-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.req-detail-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Center list items */
+    gap: 0.75rem;
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: var(--text);
+    padding: 0.75rem 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+
+.check-icon {
+    color: #22c55e;
+    font-weight: bold;
+}
+
+/* Additional Info Section */
+.gst-help-section {
+    background: #f7fafa;
+    border-radius: 12px;
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    border: 1px solid #e3e6e6;
+}
+
+.gst-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #0f1111;
+}
+
+.gst-content p {
+    color: #565959;
+    margin-bottom: 1.5rem;
+}
+
+.link-btn {
+    color: #1A237E;
+    text-decoration: none;
+    font-weight: 800;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    letter-spacing: 0.05em;
+}
+
+.link-btn:hover {
+    color: #0D1642;
+    text-decoration: none;
+    transform: translateX(5px);
+    transition: transform 0.3s;
+}
+
+
+/* CTA Footer */
+.req-cta-section {
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.start-selling-btn-large {
+    background: #1A237E;
+    border: none;
+    color: white;
+    font-size: 1.125rem;
+    font-weight: 800;
+    padding: 1.5rem 4rem;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 15px 35px rgba(26, 35, 126, 0.2);
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.start-selling-btn-large:hover {
+    background: #0D1642;
+    transform: translateY(-3px);
+    box-shadow: 0 20px 45px rgba(26, 35, 126, 0.3);
+}
+
+
+@media (max-width: 768px) {
+    .gst-help-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem 1.5rem;
+    }
+
+    .requirements-title {
+        font-size: 2rem;
+    }
+
+    .req-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .req-card {
+        padding: 2.5rem 1.5rem;
+    }
+}

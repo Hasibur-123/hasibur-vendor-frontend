@@ -1,0 +1,296 @@
+.list-products-container {
+    font-family: 'Outfit', sans-serif;
+    color: #0f1111;
+    background-color: #ffffff;
+}
+
+.lp-hero {
+    width: 100vw;
+    margin: 0 !important;
+    margin-left: calc(-50vw + 50%) !important;
+    margin-top: -80px !important;
+    /* Pull under navbar */
+    padding-top: 80px !important;
+    /* Offset content */
+    background: linear-gradient(135deg, rgba(26, 35, 126, 0.9) 0%, rgba(13, 22, 66, 0.95) 100%), url('https://images.unsplash.com/photo-1552664730-d307ca884978?w=1920&h=600&fit=crop&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-bottom: 8rem !important;
+    text-align: center;
+    color: white;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.lp-hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.lp-hero-title {
+    font-size: clamp(2.25rem, 8vw, 4.5rem);
+    font-weight: 900;
+    margin-bottom: 2rem;
+    color: #ffffff;
+    letter-spacing: -0.02em;
+}
+
+
+.lp-hero-desc {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.95);
+    margin-bottom: 3rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.lp-primary-btn {
+    display: inline-block;
+    padding: 1.25rem 3.5rem;
+    background: #FFD700;
+    color: #1A237E;
+    font-weight: 800;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1.125rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transition: all 0.3s ease;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.lp-primary-btn:hover {
+    background: #FFA000;
+    transform: translateY(-3px);
+}
+
+
+/* Methods Section */
+.lp-methods-section {
+    padding: 5rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.lp-section-heading {
+    text-align: center;
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    font-weight: 900;
+    margin-bottom: 4rem;
+    color: #1A237E;
+    letter-spacing: -0.02em;
+}
+
+
+.lp-methods-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+}
+
+.lp-method-card {
+    background: white;
+    border: 1px solid var(--glass-border);
+    border-radius: 1.5rem;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centered Cards */
+    text-align: center;
+}
+
+.lp-method-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(26, 35, 126, 0.08);
+    border-color: #1A237E;
+}
+
+
+.lp-method-img {
+    width: 100%;
+    height: 300px;
+    background: #f9f9f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #eee;
+    overflow: hidden;
+}
+
+.lp-method-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.lp-method-content {
+    padding: 2rem;
+}
+
+.lp-method-title {
+    font-size: 1.25rem;
+    font-weight: 800;
+    margin-bottom: 0.75rem;
+}
+
+.lp-method-desc {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.lp-link {
+    color: #1A237E;
+    text-decoration: none;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+}
+
+.lp-link:hover {
+    color: #3949AB;
+    gap: 0.75rem;
+    transition: all 0.3s ease;
+}
+
+
+/* Steps Section */
+.lp-steps-section {
+    background: #fafafa;
+    padding: 5rem 2rem;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.lp-steps-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.lp-step-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.lp-step-row:last-child {
+    margin-bottom: 0;
+}
+
+.lp-step-number {
+    font-size: 3rem;
+    font-weight: 200;
+    color: #ddd;
+    line-height: 1;
+}
+
+.lp-step-content {
+    flex: 1;
+}
+
+.lp-step-title {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    color: #1A237E;
+}
+
+
+.lp-step-desc {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Tools Section */
+.lp-tools-section {
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.lp-tools-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.lp-tool-item {
+    max-width: 300px;
+    padding: 1.5rem;
+}
+
+.lp-tool-icon {
+    font-size: 3rem;
+    color: #1A237E;
+    margin-bottom: 1.5rem;
+    display: block;
+}
+
+
+.lp-tool-title {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: #1A237E;
+    margin-bottom: 0.5rem;
+}
+
+
+@media (max-width: 768px) {
+    .lp-hero {
+        width: 100%;
+        margin-left: 0 !important;
+        margin-top: -64px !important;
+        padding-top: 64px !important;
+        padding-bottom: 4rem !important;
+        min-height: 400px;
+    }
+
+    .lp-hero-title {
+        font-size: 2rem;
+    }
+
+    .lp-hero-desc {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .lp-methods-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .lp-method-card {
+        margin-bottom: 1rem;
+    }
+
+    .lp-step-row {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+        align-items: center;
+    }
+
+    .lp-step-number {
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+    }
+}
