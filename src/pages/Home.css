@@ -915,6 +915,24 @@
         display: none;
     }
 
+    /* Fix Mobile Search Bar */
+    .hero-search-form {
+        padding: 5px;
+        border-radius: 50px;
+    }
+
+    .hero-search-input {
+        padding: 10px 15px;
+        font-size: 0.95rem;
+    }
+
+    .hero-search-btn {
+        padding: 10px 20px;
+        font-size: 0.95rem;
+        white-space: nowrap;
+        flex-shrink: 0;
+    }
+
     .trust-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);

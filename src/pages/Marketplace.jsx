@@ -185,7 +185,7 @@ const Marketplace = () => {
     useEffect(() => {
         const fetchCategories = async () => {
             try {
-                const response = await axios.get(`${import.meta.env.VITE_API_URL || 'http://localhost:5000'}/api/products`);
+                const response = await axios.get(`${import.meta.env.VITE_API_URL || 'http://localhost:5000'}/api/categories`);
                 setCategories(response.data);
             } catch (err) {
                 console.error('Failed to fetch categories:', err);
