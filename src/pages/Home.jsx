@@ -54,9 +54,6 @@ const Home = () => {
                 <div className="hero-content-centered animate-fade-in">
                     {/* Premium Hero Disclaimer Aspect */}
                     <div className="hero-disclaimer-premium">
-                        <div className="status-glow-container">
-                            <span className="status-glow"></span>
-                        </div>
                         <div className="disclaimer-content-lux">
                             <span className="disclaimer-label">Live Preview</span>
                             <span className="disclaimer-separator"></span>
